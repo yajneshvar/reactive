@@ -21,7 +21,13 @@ fun main(args: Array<String>) {
 
 	val category = categoryRepository.findById(1)
 
-	category.subscribe {  cat -> println("${cat.name}") }
+	println("TEST")
+
+	category
+			.subscribe( {cat -> println("${cat.name}")},
+					{error -> println("${error}")},
+					{ println("Complete!!!")})
+
 
 
 

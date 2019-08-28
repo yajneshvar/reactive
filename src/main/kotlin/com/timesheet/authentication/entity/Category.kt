@@ -1,11 +1,11 @@
 package com.timesheet.authentication.entity
 
 import org.springframework.data.annotation.Id
+import org.springframework.data.relational.core.mapping.Table
 
-
-class Category {
-
-     @Id
-    val id: Long? = null
-    val name: String? = null
-}
+@Table("categories")
+data class Category (
+    @Id
+    val id: Long,
+    val name: String
+)
