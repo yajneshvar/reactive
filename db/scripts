@@ -1,0 +1,10 @@
+SELECT * FROM pg_catalog.pg_tables
+
+create table categories ( id serial primary key, 
+                        name varchar(100) not null);
+                                                
+                                                insert into categories (name) values ('Cars');
+                                                insert into categories (name) values ('Planes');
+                                                insert into categories (name) values ('Busses');
+
+                                                select * from categories;       
