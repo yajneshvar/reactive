@@ -1,6 +1,6 @@
-package com.timesheet.authentication.respository
+package com.cloudy.timesheet.respository
 
-import com.timesheet.authentication.entity.Category
+import com.cloudy.timesheet.entity.Category
 import org.springframework.data.r2dbc.repository.R2dbcRepository
 import org.springframework.data.repository.reactive.ReactiveCrudRepository
 import org.springframework.stereotype.Repository

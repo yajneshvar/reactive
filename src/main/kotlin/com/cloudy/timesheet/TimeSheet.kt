@@ -1,19 +1,17 @@
-package com.timesheet.authentication
+package com.cloudy.timesheet
 
-import com.timesheet.authentication.respository.CategoryRepository
-import org.springframework.beans.factory.annotation.Autowired
+import com.cloudy.timesheet.respository.CategoryRepository
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import reactor.core.publisher.Mono
 
 @SpringBootApplication
-class AuthenticationApplication
+class TimeSheet
 
 //@Autowired
 //lateinit var categoryRepository: CategoryRepository
 
 fun main(args: Array<String>) {
-	val runApplication = runApplication<AuthenticationApplication>(*args)
+	val runApplication = runApplication<TimeSheet>(*args)
 
 	var categoryRepository: CategoryRepository
 
@@ -23,10 +21,10 @@ fun main(args: Array<String>) {
 
 	println("TEST")
 
-	category
-			.subscribe( {cat -> println("${cat.name}")},
+	category.subscribe( {cat -> println("${cat.name}")},
 					{error -> println("${error}")},
 					{ println("Complete!!!")})
+
 
 
 

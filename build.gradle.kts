@@ -25,6 +25,10 @@ repositories {
 
 dependencies {
 	implementation("io.r2dbc:r2dbc-postgresql:0.8.0.M8")
+	//spring-boot-starter-logging'
+	implementation("org.springframework.boot:spring-boot-starter-logging:2.1.7.RELEASE")
+	//compile group: 'org.springframework.boot', name: 'spring-boot-starter-log4j2', version: '2.1.7.RELEASE'
+	//implementation("org.springframework.boot:spring-boot-starter-log4j2:2.1.7.RELEASE")
 	implementation("org.springframework.data:spring-data-r2dbc:1.0.0.M2")
 	implementation("org.springframework.boot:spring-boot-starter-webflux:2.2.0.M3")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")

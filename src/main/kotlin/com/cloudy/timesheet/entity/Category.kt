@@ -1,4 +1,4 @@
-package com.timesheet.authentication.entity
+package com.cloudy.timesheet.entity
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
