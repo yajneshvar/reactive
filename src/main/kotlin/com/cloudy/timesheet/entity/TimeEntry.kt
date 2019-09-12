@@ -5,10 +5,12 @@ import org.springframework.data.relational.core.mapping.Table
 import java.sql.Date
 import java.sql.Time
 import java.time.Duration
+import java.time.LocalDate
+import java.time.LocalTime
 import javax.annotation.Generated
 
 @Table("time_entry")
-data class TimeEntry(@Id val id: Long,
-                     val userId: String, val startTime: Time,
-                     val endTime: Time, val entryDate: Date,
+data class TimeEntry(@Id val id: Long?,
+                     val userId: String, val startTime: LocalTime,
+                     val endTime: LocalTime, val entryDate: LocalDate,
                      val duration: Long)
